@@ -666,6 +666,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmm-qcamera
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.clearkey
