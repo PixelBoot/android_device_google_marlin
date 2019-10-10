@@ -709,3 +709,7 @@ PRODUCT_PACKAGES += \
     performanced \
     virtual_touchpad \
     vr_hwc
+
+# Component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
