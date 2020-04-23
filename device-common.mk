@@ -637,3 +637,23 @@ PRODUCT_PACKAGES += \
 
 # a_sns_test for sensor testing
 PRODUCT_PACKAGES_DEBUG += a_sns_test
+
+# Write flags to the vendor space in /misc partition.
+PRODUCT_PACKAGES += \
+    misc_writer
+
+# Camera
+PRODUCT_PACKAGES += \
+    libmm-qcamera
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.2-service.clearkey
+
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
+# Tool
+PRODUCT_PACKAGES += \
+    libtinyxml
