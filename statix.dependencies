@@ -1,0 +1,8 @@
+[
+   {
+      "repository":"PixelDust-Devices/android_kernel_google_marlin",
+      "target_path":"kernel/google/marlin",
+      "branch":"ten",
+      "remote":"github"
+   }
+]
