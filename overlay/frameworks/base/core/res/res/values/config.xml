@@ -509,6 +509,12 @@
      <!-- True if Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
+    <!-- Specify model in case of attestation failure due to misprovisioned device. -->
+    <string name="config_misprovisionedDeviceModel" translatable="false">Pixel</string>
+
+    <!-- Brand value for attestation of misprovisioned device. -->
+    <string name="config_misprovisionedBrandValue" translatable="false">htc</string>
+
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">false</bool>
 
