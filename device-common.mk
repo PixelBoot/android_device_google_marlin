@@ -364,6 +364,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rcs.supported=1 \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
+# VoLTE
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.radio.rat_on=combine \
+    persist.radio.calls.on.ims=1
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.mode=concurrent
 
