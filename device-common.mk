@@ -26,6 +26,9 @@ PRODUCT_SHIPPING_API_LEVEL := 25
 # Setting vendor SPL
 VENDOR_SECURITY_PATCH := "2019-10-05"
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+
 PRODUCT_SOONG_NAMESPACES += \
     device/google/marlin \
     vendor/google/camera \
