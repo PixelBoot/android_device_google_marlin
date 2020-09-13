@@ -404,6 +404,10 @@
          states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
+    <!-- True if the display hardware only has brightness buckets rather than a full range of
+         backlight values -->
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+
     <!-- Specify custom blanking delay of the display -->
     <integer name="config_screen_off_delay">0</integer>
 
