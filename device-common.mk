@@ -29,6 +29,7 @@ PRODUCT_SHIPPING_API_LEVEL := 25
 PRODUCT_SOONG_NAMESPACES += \
     device/google/marlin \
     vendor/google/camera \
+    hardware/google/interfaces \
     hardware/google/pixel
 
 PRODUCT_COPY_FILES += \
