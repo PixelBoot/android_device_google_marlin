@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR
 
 $(call inherit-product, device/google/marlin/device-marlin.mk)
 $(call inherit-product-if-exists, vendor/google_devices/marlin/device-vendor-marlin.mk)
+$(call inherit-product, vendor/google/marlin/marlin-vendor.mk)
 
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \
