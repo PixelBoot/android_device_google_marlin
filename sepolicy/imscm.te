@@ -9,6 +9,5 @@ init_daemon_domain(imscm)
 typeattribute imscm binder_in_vendor_violators;
 binder_use(imscm)
 
-allow imscm imscm_service:service_manager add;
 allow imscm sysfs:dir r_dir_perms;
 r_dir_file(imscm, sysfs_msm_subsys)
