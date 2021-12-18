@@ -26,7 +26,7 @@ PRODUCT_DEVICE := marlin
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on msm8996
 PRODUCT_MANUFACTURER := Google
-PRODUCT_RESTRICT_VENDOR_FILES := true
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_COPY_FILES += device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.marlin
 
