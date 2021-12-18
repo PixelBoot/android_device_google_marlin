@@ -637,8 +637,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-dex/libdexfile_support-v30-arm.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.vndk.current/lib/libdexfile_support.so \
-    $(LOCAL_PATH)/vndk-dex/libdexfile_support-v30-arm64.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.vndk.current/lib64/libdexfile_support.so \
-    $(LOCAL_PATH)/vndk-dex/vndksp.libraries.30.txt:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.vndk.current/etc/vndksp.libraries.30.txt
+    $(LOCAL_PATH)/vndk-dex/libdexfile_support-v30-arm64.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.vndk.current/lib64/libdexfile_support.so
 
 # Marlin/Sailfish kernel doesn't have HEH filename encryption
 PRODUCT_PROPERTY_OVERRIDES += \
