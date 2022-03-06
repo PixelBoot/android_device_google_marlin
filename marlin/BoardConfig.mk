@@ -108,6 +108,9 @@ TARGET_FS_CONFIG_GEN := device/google/marlin/config.fs
 
 BOARD_EGL_CFG := device/google/marlin/egl.cfg
 
+SELINUX_IGNORE_NEVERALLOWS := true
+SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
+
 BOARD_KERNEL_BASE        := 0x80000000
 BOARD_KERNEL_PAGESIZE    := 4096
 ifneq ($(filter marlin_kasan, $(TARGET_PRODUCT)),)
