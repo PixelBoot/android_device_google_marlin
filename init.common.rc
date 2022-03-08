@@ -19,6 +19,40 @@ on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
+on post-fs
+    rm /cache/boot_lc_full.txt
+    rm /cache/boot_lc_crash.txt
+    rm /cache/boot_lc_kernel.txt
+    start boot_lc
+    start boot_lc_kernel
+    start boot_lc_crash
+
+service boot_lc /system/bin/logcat -b all -D -f /cache/boot_lc_full.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_lc_crash /system/bin/logcat -b crash -D -f /cache/boot_lc_crash.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_lc_kernel /system/bin/logcat -b kernel -D -f /cache/boot_lc_kernel.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    stop boot_lc
+    stop boot_lc_crash
+    stop boot_lc_kernel
+
 on init
     # Set sku property
     start vendor.mid_sh
